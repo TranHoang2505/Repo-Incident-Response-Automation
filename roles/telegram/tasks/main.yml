@@ -19,7 +19,7 @@
       text: "Source IP Address {{ source_address }} has been blocked - Reason: {{ reason }}"
       disable_web_page_preview: True
       disable_notification: True
-  when: services == 'vnportals' and inventory_hostname == 'vnportal-2019'
+  when: services == 'vnportals'
 
 - name: Send notify to Telegram
   community.general.telegram:
